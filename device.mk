@@ -290,3 +290,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 # Perf
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
    ro.qualcomm.perf.cores_online=2
+
+# Free form window management
+PRODUCT_COPY_FILES += \
+   frameworks/native/data/etc/android.software.freeform_window_management.xml:system/etc/permissions/android.software.freeform_window_management.xml
+
