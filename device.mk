@@ -295,3 +295,19 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
    frameworks/native/data/etc/android.software.freeform_window_management.xml:system/etc/permissions/android.software.freeform_window_management.xml
 
+# OpenGapps
+GAPPS_VARIANT := stock
+
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
+
+PRODUCT_PACKAGES += \
+	Pinyin \
+	Japanese \
+	Translate
+
+GAPPS_EXCLUDED_PACKAGES := \
+	GoogleNow \
+	PixelLauncher \
+	GooglePlus
+
+
