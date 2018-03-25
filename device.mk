@@ -308,6 +308,7 @@ PRODUCT_PACKAGES += \
 GAPPS_EXCLUDED_PACKAGES := \
 	GoogleNow \
 	PixelLauncher \
-	GooglePlus
-
+	GooglePlus \
+	TalkBack \
+	Duo 
 
